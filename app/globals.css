@@ -32,3 +32,26 @@ body {
   text-align: center;
   padding: 15px;
 }
+
+.ordersTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.ordersTable th,
+.ordersTable td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+.ordersTable th {
+  background-color: dimgray;
+  color: white;
+}
+
+.ordersTable tr:nth-child(even) {
+  background-color: #eeeeee;
+}
