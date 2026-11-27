@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import orders from "../orders";
 
 export default function OrdersPage() {
@@ -18,6 +19,7 @@ export default function OrdersPage() {
             <th>Dress</th>
             <th>Price</th>
             <th>Due Day</th>
+            <th>Details</th>
           </tr>
         </thead>
 
@@ -29,6 +31,11 @@ export default function OrdersPage() {
               <td>{order.dress}</td>
               <td>Rs. {order.price}</td>
               <td>{order.due}</td>
+              <td>
+                <Link href={`/orders/${order.id}`}>
+                  View Order
+                </Link>
+              </td>
             </tr>
           ))}
         </tbody>

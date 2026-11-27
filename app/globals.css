@@ -55,3 +55,30 @@ body {
 .ordersTable tr:nth-child(even) {
   background-color: #eeeeee;
 }
+
+.orderCard {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-left: 6px solid dimgray;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.orderCard p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+a {
+  color: dimgray;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
